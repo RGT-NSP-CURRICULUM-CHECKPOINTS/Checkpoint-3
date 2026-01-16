@@ -2,8 +2,8 @@
 
 ## 📌 Overview
 This project is a **RESTful API built with Express.js and TypeScript** for managing invoices and their statuses.  
-It supports **CRUD operations** (Create, Read, Update, Delete) and filtering invoices by status.  
-All data is stored in memory for simplicity.
+It supports **CRUD operations** (Create, Read, Update, Delete) and filtering invoices by status (`paid`, `pending`, `overdue`).  
+All data is stored in memory for simplicity, making it ideal for learning backend fundamentals.
 
 ---
 
@@ -16,19 +16,39 @@ This project demonstrates how to:
   - Retrieve all invoices or a single invoice by ID
   - Update an invoice's status
   - Delete an invoice
-- Filter invoices by their status (`paid`, `pending`, `overdue`)
-- Handle invalid input and missing resources with **proper HTTP status codes**
+- Filter invoices by their status
+- Handle invalid input and missing resources with **appropriate HTTP status codes**
 - Parse JSON request bodies using Express middleware
 - Run a backend API server locally
+- Apply **strict TypeScript typing and configuration** in a Node.js project
 
 ---
 
 ## 🛠️ Technologies Used
-- **Node.js**
-- **Express.js**
-- **TypeScript**
-- **ts-node / ts-node-dev**
-- **npm**
+- Node.js
+- Express.js
+- TypeScript
+- ts-node / ts-node-dev
+- npm
+
+---
+
+## 🛠️ Environment / Requirements
+
+- **Node.js:** v20.5.1  <!-- replace with your local Node version -->
+- **Express:** v5.2.1
+- **TypeScript:** v5.9.3
+- **ts-node:** v10.9.2
+- **Nodemon:** v3.1.11
+- **@types/express:** v5.0.6
+- **@types/node:** v25.0.3
+
+### TypeScript Configuration Highlights
+- Module system: `NodeNext`
+- Target: `ESNext`
+- Strict type checking enabled (`strict: true`, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`)
+- Source maps and declaration files generated (`sourceMap`, `declaration`, `declarationMap`)
+- Ensures robust typing, safer code, and better developer experience
 
 ---
 
@@ -62,7 +82,7 @@ npm install
 npm run dev
 ```
 
-Or compile and run:
+Or compile and run for production:
 ```bash
 npm run build
 npm start
@@ -105,24 +125,14 @@ Server will run on **http://localhost:3000**
 ---
 
 ## 📚 Learning Outcome
-- Setting up a **TypeScript Express project**
-- Typing Express request and response objects
-- Structuring a RESTful API
-- Implementing CRUD operations and filtering
-- Handling errors and status codes in a backend API
+- Setting up a **TypeScript Express project**  
+- Typing Express request and response objects  
+- Structuring a RESTful API  
+- Implementing CRUD operations and filtering  
+- Handling errors and HTTP status codes  
+- Using strict TypeScript configuration for safer, more maintainable code  
 
 ---
-
-## 🛠️ Environment / Requirements
-
-- **Node.js:** v20.5.1  <!-- replace with your local node version -->
-- **Express:** v5.2.1
-- **TypeScript:** v5.9.3
-- **ts-node:** v10.9.2
-- **Nodemon:** v3.1.11
-- **@types/express:** v5.0.6
-- **@types/node:** v25.0.3
-
 
 ## 🧠 Author
 **Daniel Dzivor**
