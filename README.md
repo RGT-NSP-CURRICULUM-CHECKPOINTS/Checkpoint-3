@@ -113,5 +113,16 @@ Server will run on **http://localhost:3000**
 
 ---
 
+## 🛠️ Environment / Requirements
+
+- **Node.js:** v20.5.1  <!-- replace with your local node version -->
+- **Express:** v5.2.1
+- **TypeScript:** v5.9.3
+- **ts-node:** v10.9.2
+- **Nodemon:** v3.1.11
+- **@types/express:** v5.0.6
+- **@types/node:** v25.0.3
+
+
 ## 🧠 Author
 **Daniel Dzivor**
